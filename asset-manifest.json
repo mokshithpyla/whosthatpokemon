@@ -1,17 +1,17 @@
 {
   "files": {
     "main.css": "/whodatpokemon/static/css/main.5f361e03.chunk.css",
-    "main.js": "/whodatpokemon/static/js/main.1067ffe1.chunk.js",
-    "main.js.map": "/whodatpokemon/static/js/main.1067ffe1.chunk.js.map",
+    "main.js": "/whodatpokemon/static/js/main.f32d0b03.chunk.js",
+    "main.js.map": "/whodatpokemon/static/js/main.f32d0b03.chunk.js.map",
     "runtime-main.js": "/whodatpokemon/static/js/runtime-main.6e4f8918.js",
     "runtime-main.js.map": "/whodatpokemon/static/js/runtime-main.6e4f8918.js.map",
-    "static/js/2.cc31ed98.chunk.js": "/whodatpokemon/static/js/2.cc31ed98.chunk.js",
-    "static/js/2.cc31ed98.chunk.js.map": "/whodatpokemon/static/js/2.cc31ed98.chunk.js.map",
+    "static/js/2.5109a628.chunk.js": "/whodatpokemon/static/js/2.5109a628.chunk.js",
+    "static/js/2.5109a628.chunk.js.map": "/whodatpokemon/static/js/2.5109a628.chunk.js.map",
     "index.html": "/whodatpokemon/index.html",
-    "precache-manifest.7c372b5e11b56e21344ca44fcc63d89d.js": "/whodatpokemon/precache-manifest.7c372b5e11b56e21344ca44fcc63d89d.js",
+    "precache-manifest.fe1e8838f48b9d4d0a04d9055a962c57.js": "/whodatpokemon/precache-manifest.fe1e8838f48b9d4d0a04d9055a962c57.js",
     "service-worker.js": "/whodatpokemon/service-worker.js",
     "static/css/main.5f361e03.chunk.css.map": "/whodatpokemon/static/css/main.5f361e03.chunk.css.map",
-    "static/js/2.cc31ed98.chunk.js.LICENSE.txt": "/whodatpokemon/static/js/2.cc31ed98.chunk.js.LICENSE.txt",
+    "static/js/2.5109a628.chunk.js.LICENSE.txt": "/whodatpokemon/static/js/2.5109a628.chunk.js.LICENSE.txt",
     "static/media/1.png": "/whodatpokemon/static/media/1.4df5b90d.png",
     "static/media/10.png": "/whodatpokemon/static/media/10.c207d2d1.png",
     "static/media/100.png": "/whodatpokemon/static/media/100.1316ea7e.png",
@@ -167,8 +167,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.6e4f8918.js",
-    "static/js/2.cc31ed98.chunk.js",
+    "static/js/2.5109a628.chunk.js",
     "static/css/main.5f361e03.chunk.css",
-    "static/js/main.1067ffe1.chunk.js"
+    "static/js/main.f32d0b03.chunk.js"
   ]
 }

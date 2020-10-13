@@ -1,23 +1,23 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "23a978f9cc4e4ed115b7be53ff994925",
+    "revision": "56852bd4aaf0e3578431655cb3ebe72c",
     "url": "/whodatpokemon/index.html"
   },
   {
-    "revision": "8adf964a2a881509fdb1",
+    "revision": "64b257aa5cdfeba21247",
     "url": "/whodatpokemon/static/css/main.5f361e03.chunk.css"
   },
   {
-    "revision": "c0f5697d63d90c57de31",
-    "url": "/whodatpokemon/static/js/2.cc31ed98.chunk.js"
+    "revision": "6335514b007e9eb8a70d",
+    "url": "/whodatpokemon/static/js/2.5109a628.chunk.js"
   },
   {
     "revision": "216e537bacc64f9dbaabd26649a9ab95",
-    "url": "/whodatpokemon/static/js/2.cc31ed98.chunk.js.LICENSE.txt"
+    "url": "/whodatpokemon/static/js/2.5109a628.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "8adf964a2a881509fdb1",
-    "url": "/whodatpokemon/static/js/main.1067ffe1.chunk.js"
+    "revision": "64b257aa5cdfeba21247",
+    "url": "/whodatpokemon/static/js/main.f32d0b03.chunk.js"
   },
   {
     "revision": "602d56d7fd79d30a890c",
