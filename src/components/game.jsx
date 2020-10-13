@@ -1,11 +1,8 @@
 import { DefaultButton, TextField } from '@fluentui/react';
 import React, { Component } from 'react';
 import pokemonNames from '../script';
-const maskFormat = {
-  '*': /[a-zA-Z0-9_]/,
-};
 
-const images = require.context('../images', true);
+const images = require.context('../images/pokemon', true);
 
 
 class Game extends Component {
@@ -34,7 +31,7 @@ class Game extends Component {
   render() {
     return (
       <div>
-        <img ref={this.myRef} src={this.state.img} style={{ filter: "contrast(0%) brightness(50%)" }} />
+        <img ref={this.myRef} src={this.state.img} style={{ filter: "contrast(0%) brightness(50%)" }} alt="pokemon"/>
         <DefaultButton text="Reveal" onClick={this.revealPokemon}></DefaultButton>
     {!this.state.revealed  && <TextField label="Guess!" onChange={this.handleChange} value={this.state.guess} /> }
         { this.state.revealed &&
@@ -109,7 +106,7 @@ class Game extends Component {
     });
 
     // Check if we're at zero.
-    if (seconds == 0) {
+    if (seconds === 0) {
       clearInterval(this.timer);
       this.setState({ revealed: false });
       const img = this.getNewPokemonImage();
@@ -125,7 +122,7 @@ class Game extends Component {
   }
 
   startTimer() {
-    if (this.timer == 0 && this.state.seconds > 0) {
+    if (this.timer === 0 && this.state.seconds > 0) {
       this.timer = setInterval(this.countDown, 1000);
     }
   }

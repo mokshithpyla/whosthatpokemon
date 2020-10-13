@@ -1,8 +1,8 @@
 import './App.css';
 import Home from './components/home';
 import Game from './components/game';
-import React, { Component } from 'react';
-import {BrowserRouter as Router, Link, Route} from 'react-router-dom';
+import React from 'react';
+import {BrowserRouter as Router, Route} from 'react-router-dom';
 
 function App() {
   return (
