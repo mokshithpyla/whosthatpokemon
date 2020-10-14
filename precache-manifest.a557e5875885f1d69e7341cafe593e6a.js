@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "9594cee3c62c3ea0bd5d43f8959bb8c5",
+    "revision": "6b36abea687bd2376b349990454a4b68",
     "url": "/whosthatpokemon/index.html"
   },
   {
-    "revision": "06008dd2148cbf26beae",
+    "revision": "d3600f780c5e04f435b5",
     "url": "/whosthatpokemon/static/css/main.5f361e03.chunk.css"
   },
   {
-    "revision": "c0f5697d63d90c57de31",
-    "url": "/whosthatpokemon/static/js/2.cc31ed98.chunk.js"
+    "revision": "b9d3a2d7ae97cb34cbb4",
+    "url": "/whosthatpokemon/static/js/2.c99fbe82.chunk.js"
   },
   {
     "revision": "216e537bacc64f9dbaabd26649a9ab95",
-    "url": "/whosthatpokemon/static/js/2.cc31ed98.chunk.js.LICENSE.txt"
+    "url": "/whosthatpokemon/static/js/2.c99fbe82.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "06008dd2148cbf26beae",
-    "url": "/whosthatpokemon/static/js/main.87553431.chunk.js"
+    "revision": "d3600f780c5e04f435b5",
+    "url": "/whosthatpokemon/static/js/main.7183fd16.chunk.js"
   },
   {
-    "revision": "7e29e5b38c4ae255a173",
-    "url": "/whosthatpokemon/static/js/runtime-main.e4556793.js"
+    "revision": "e003b6758f6e57970c0f",
+    "url": "/whosthatpokemon/static/js/runtime-main.9c1927e1.js"
   },
   {
     "revision": "4df5b90dab5ef252a856a5195e4b7401",
