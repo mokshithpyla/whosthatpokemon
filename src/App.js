@@ -9,7 +9,7 @@ function App() {
     <div className="App">
       <h1> Who's That Pokemon? </h1>
       <Router>
-        <Route path="/whodatpokemon" exact component={Home} />
+        <Route path="/whosthatpokemon" exact component={Home} />
         <Route path="/game" component={Game} />
       </Router>
     </div>
