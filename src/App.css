@@ -2,7 +2,9 @@
 * {
   box-sizing: border-box;
 }
-
+html, body, #root, .App {
+  height: 100%;
+}
 .container {
   text-align: center;
   /* background-image: linear-gradient(to bottom,#D60108,#FB232E);  */
@@ -20,7 +22,6 @@
     /* background-image: linear-gradient(to bottom,#D60108,#FB232E);  */
     background-image: radial-gradient(circle, #FB232E, #a50005);
     width: 100%;
-    height: 100%;
     margin: auto;
     border-radius: 2%;
   }
@@ -80,6 +81,8 @@
 .content {
   /* padding: 20%; */
   /* background-color: rgb(142, 255, 244); */
+  height: 100%;
+  width: 100%;
 }
 
 .circle-parent {
@@ -154,4 +157,20 @@
   60% { top: 0 }
   80% { top: -20px }
   100% { top: 0 }
+}
+
+.canvasContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 350px;
+}
+
+.shadowImage {
+  height: auto;
+  max-height: 100%;
+  max-width: 90%;
+  min-height: 0;
+  object-fit: contain;
 }

@@ -35,8 +35,8 @@ class Game extends Component {
   render() {
     return (
       <div className="content">
-        <div className="image">
-          <img ref={this.myRef} src={this.state.img} style={{ filter: "contrast(0%) brightness(50%)" }} />
+        <div className="canvasContainer">
+          <img ref={this.myRef} src={this.state.img} style={{ filter: "contrast(0%) brightness(50%)" }} className="shadowImage"/>
         </div>
         <DefaultButton text="Reveal" onClick={this.revealPokemon}></DefaultButton>
         {!this.state.revealed && <TextField label="Guess!" onChange={this.handleChange} value={this.state.guess} className="button" />}
