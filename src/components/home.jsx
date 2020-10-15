@@ -9,7 +9,7 @@ class Home extends Component {
   render() {
     return (
       <div>
-        <img src={whodat} width="640" height="480" />
+        {/* <img src={whodat} width="640" height="480" /> */}
         <br />
           <Link to="/game"> <DefaultButton text="Start Guessing!" /> </Link>
       </div>

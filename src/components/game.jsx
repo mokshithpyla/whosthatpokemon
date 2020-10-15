@@ -1,6 +1,7 @@
 import { DefaultButton, TextField } from '@fluentui/react';
 import React, { Component } from 'react';
 import pokemonNames from '../script';
+import '../App.css';
 const maskFormat = {
   '*': /[a-zA-Z0-9_]/,
 };
@@ -33,10 +34,12 @@ class Game extends Component {
 
   render() {
     return (
-      <div>
-        <img ref={this.myRef} src={this.state.img} style={{ filter: "contrast(0%) brightness(50%)" }} />
+      <div className="content">
+        <div className="image">
+          <img ref={this.myRef} src={this.state.img} style={{ filter: "contrast(0%) brightness(50%)" }} />
+        </div>
         <DefaultButton text="Reveal" onClick={this.revealPokemon}></DefaultButton>
-    {!this.state.revealed  && <TextField label="Guess!" onChange={this.handleChange} value={this.state.guess} /> }
+        {!this.state.revealed && <TextField label="Guess!" onChange={this.handleChange} value={this.state.guess} className="button" />}
         { this.state.revealed &&
           <div>
             <p> It's {pokemonNames[this.pokemonNumber]}
@@ -50,10 +53,10 @@ class Game extends Component {
   }
 
   handleChange = (event) => {
-    this.setState({guess: event.target.value});
+    this.setState({ guess: event.target.value });
     if (event.target.value.toLowerCase() === pokemonNames[this.pokemonNumber].toLowerCase()) {
       this.revealPokemon();
-      this.setState({guess: ''})
+      this.setState({ guess: '' })
     }
   }
 
