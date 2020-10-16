@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/whosthatpokemon/static/css/main.fa596cbf.chunk.css",
-    "main.js": "/whosthatpokemon/static/js/main.65f21689.chunk.js",
-    "main.js.map": "/whosthatpokemon/static/js/main.65f21689.chunk.js.map",
+    "main.css": "/whosthatpokemon/static/css/main.7cac262e.chunk.css",
+    "main.js": "/whosthatpokemon/static/js/main.bf337e2a.chunk.js",
+    "main.js.map": "/whosthatpokemon/static/js/main.bf337e2a.chunk.js.map",
     "runtime-main.js": "/whosthatpokemon/static/js/runtime-main.9c1927e1.js",
     "runtime-main.js.map": "/whosthatpokemon/static/js/runtime-main.9c1927e1.js.map",
-    "static/js/2.cedea664.chunk.js": "/whosthatpokemon/static/js/2.cedea664.chunk.js",
-    "static/js/2.cedea664.chunk.js.map": "/whosthatpokemon/static/js/2.cedea664.chunk.js.map",
+    "static/js/2.4a6bf53e.chunk.js": "/whosthatpokemon/static/js/2.4a6bf53e.chunk.js",
+    "static/js/2.4a6bf53e.chunk.js.map": "/whosthatpokemon/static/js/2.4a6bf53e.chunk.js.map",
     "index.html": "/whosthatpokemon/index.html",
-    "precache-manifest.8978fb9079d9e010bf9b61952184c5b6.js": "/whosthatpokemon/precache-manifest.8978fb9079d9e010bf9b61952184c5b6.js",
+    "precache-manifest.f3d8cf57f00eb694736dfe2a587bf868.js": "/whosthatpokemon/precache-manifest.f3d8cf57f00eb694736dfe2a587bf868.js",
     "service-worker.js": "/whosthatpokemon/service-worker.js",
-    "static/css/main.fa596cbf.chunk.css.map": "/whosthatpokemon/static/css/main.fa596cbf.chunk.css.map",
-    "static/js/2.cedea664.chunk.js.LICENSE.txt": "/whosthatpokemon/static/js/2.cedea664.chunk.js.LICENSE.txt",
+    "static/css/main.7cac262e.chunk.css.map": "/whosthatpokemon/static/css/main.7cac262e.chunk.css.map",
+    "static/js/2.4a6bf53e.chunk.js.LICENSE.txt": "/whosthatpokemon/static/js/2.4a6bf53e.chunk.js.LICENSE.txt",
     "static/media/1.png": "/whosthatpokemon/static/media/1.4df5b90d.png",
     "static/media/10.png": "/whosthatpokemon/static/media/10.c207d2d1.png",
     "static/media/100.png": "/whosthatpokemon/static/media/100.1316ea7e.png",
@@ -167,8 +167,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.9c1927e1.js",
-    "static/js/2.cedea664.chunk.js",
-    "static/css/main.fa596cbf.chunk.css",
-    "static/js/main.65f21689.chunk.js"
+    "static/js/2.4a6bf53e.chunk.js",
+    "static/css/main.7cac262e.chunk.css",
+    "static/js/main.bf337e2a.chunk.js"
   ]
 }
