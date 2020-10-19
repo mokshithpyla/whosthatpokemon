@@ -12,11 +12,16 @@ const images = require.context('../images', true);
 class Game extends Component {
   state = {
     revealed: false,
+    endOfGame: false,
     currentPokemonNumbers: Array.from({ length: 151 }, (_, i) => i + 1),
     time: {},
     seconds: 3,
     img: null,
-    guess: ''
+    guess: '',
+    streak: 0,
+    hstreak: 0,
+    score: 0,
+    pokemonNumber: 0
   }
   constructor(props) {
     super(props);
@@ -24,7 +29,9 @@ class Game extends Component {
     this.startTimer = this.startTimer.bind(this);
     this.countDown = this.countDown.bind(this);
     this.myRef = React.createRef();
+    this.state.pokemonNumber = this.getRandomPokemon(this.state.currentPokemonNumbers);
     this.state.img = this.getNewPokemonImage();
+    // this.state.currentPokemonNumbers.splice(this.state.pokemonNumber, 1);
   }
 
   componentDidMount() {
@@ -42,53 +49,101 @@ class Game extends Component {
           <div className="circle-sm red ml15"></div>
           <div className="circle-sm yellow ml10"></div>
           <div className="circle-sm  green ml10"></div>
+          {/* <div className="score">
+            <div className="score1 ml10">
+              <span> Score </span>
+            </div>
+            <div className="score1 ml10">
+            <span> Score </span>
+            </div>
+            <div className="score1 ml10">
+            <span> Score </span>
+            </div>
+          </div> */}
         </div>
-        <div className="canvasContainer">
-          <img ref={this.myRef} src={this.state.img} style={{ filter: "contrast(0%) brightness(50%)" }} className="shadowImage" />
+        { !this.state.endOfGame && <div>
+          <div className="canvasContainer">
+            <img ref={this.myRef} src={this.state.img} style={{ filter: "contrast(0%) brightness(0%)" }} className="shadowImage" />
+          </div>
+          {!this.state.revealed && <DefaultButton text="Reveal" onClick={() => this.revealPokemon(true)} color="white"></DefaultButton>}
+          {!this.state.revealed && <TextField label="Guess!" onChange={this.handleChange} value={this.state.guess} className="button" />}
+          {this.state.revealed &&
+            <div>
+              <p> It's {pokemonNames[this.pokemonNumber]}
+              </p>
+              <p>
+                Next Pokemon in {this.state.time.s}
+              </p>
+              <p>
+                Streak: {this.state.streak}  
+                Best: {this.state.hstreak}  
+                Score: {this.state.score}  
+              </p>
+            </div>
+          }
         </div>
-        <DefaultButton text="Reveal" onClick={this.revealPokemon} color="white"></DefaultButton>
-        {!this.state.revealed && <TextField label="Guess!" onChange={this.handleChange} value={this.state.guess} className="button" />}
-        { this.state.revealed &&
-          <div>
-            <p> It's {pokemonNames[this.pokemonNumber]}
+        }
+        { this.state.endOfGame &&
+          <div className="canvasContainer">
+            <p>
+              Out of pokemon!
             </p>
             <p>
-              Next Pokemon in {this.state.time.s}
+              You guessed {this.state.score} out of 151 Pokémons!
             </p>
+            <DefaultButton text="Play Again?" onClick={this.reset}></DefaultButton>
           </div>
         }
       </div>);
   }
 
+  reset = () => {
+    this.setState({ endOfGame: false, currentPokemonNumbers: Array.from({ length: 2 }, (_, i) => i + 1) });
+    this.startTimer();
+  }
   handleChange = (event) => {
     this.setState({ guess: event.target.value });
     if (event.target.value.toLowerCase() === pokemonNames[this.pokemonNumber].toLowerCase()) {
       this.revealPokemon();
-      this.setState({ guess: '' })
+      if (this.state.hstreak === this.state.streak) {
+        this.setState({ hstreak: this.state.hstreak + 1 });
+      }
+      this.setState({ guess: '', streak: this.state.streak + 1, score: this.state.score + 1 });
     }
   }
 
-  getRandomPokemon = () => {
-    console.log(this.state.currentPokemonNumbers, "nums");
-    const randomPN = this.state.currentPokemonNumbers[Math.floor(Math.random() * this.state.currentPokemonNumbers.length)];
+  getRandomPokemon = (pokemons) => {
+    const randomPN = pokemons[Math.floor(Math.random() * pokemons.length)];
     return randomPN;
   }
 
   getNewPokemonImage = () => {
-    const pokemonNumber = this.getRandomPokemon().toString();
-    const img = images('./' + pokemonNumber + '.png');
-    this.pokemonNumber = pokemonNumber;
+    const img = images('./' + this.state.pokemonNumber + '.png');
+    this.pokemonNumber = this.state.pokemonNumber;
     return img;
   }
 
-  revealPokemon = () => {
+  revealPokemon = (reset = false) => {
     this.myRef.current.style.filter = null;
-    this.setState({ revealed: true });
+    if (this.state.currentPokemonNumbers.length === 1) {
+      this.setState({ endOfGame: true });
+      return;
+    }
+    if (reset) {
+      this.setState({ streak: 0 });
+    }
+    console.log(this.state.currentPokemonNumbers.length, 'lenght', this.state.pokemonNumber, 'pokemon');
+    const x = this.state.currentPokemonNumbers.filter(n => n !== this.state.pokemonNumber);
+    this.setState({ currentPokemonNumbers: x });
+    const randomPN = this.getRandomPokemon(x);
+    console.log(this.state.currentPokemonNumbers.length, 'lenght');
+    console.log(this.state.currentPokemonNumbers);
+    this.setState({ revealed: true, guess: '', pokemonNumber: randomPN });
     this.startTimer();
   }
 
   hidePokemon = () => {
-    this.myRef.current.style.filter = "contrast(0%) brightness(50%)";
+    this.myRef.current.style.filter = "contrast(0%) brightness(0%)";
   }
 
   secondsToTime(secs) {

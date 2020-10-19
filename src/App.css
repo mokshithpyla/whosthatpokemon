@@ -4,21 +4,17 @@
 }
 html, body, #root, .App {
   height: 100%;
+  background-image: radial-gradient(circle,#001c67, #000000);
 }
 .container {
   text-align: center;
-  background-image: radial-gradient(circle, #FB232E, #a50005);
-  width: 50%;
-  margin: auto;
-  margin-top: 20px;
-  border-radius: 2%;
-  padding: 15px;
 }
 
 .pokedex {
   text-align: center;
   background-image: radial-gradient(circle, #FB232E, #a50005);
-  width: 50%;
+  width: 30%;
+  height: 550px;
   margin: auto;
   margin-top: 20px;
   border-radius: 2%;
@@ -28,16 +24,17 @@ html, body, #root, .App {
 @media only screen and (max-width: 768px) {
   .container {
     text-align: center;
-    background-image: radial-gradient(circle, #FB232E, #a50005);
     width: 100%;
     margin: auto;
     border-radius: 2%;
+    padding: 20px;
   }
 
   .pokedex {
     text-align: center;
     background-image: radial-gradient(circle, #FB232E, #a50005);
     width: 100%;
+    height: 550px;
     margin: auto;
     margin-top: 20px;
     border-radius: 2%;
@@ -97,8 +94,6 @@ html, body, #root, .App {
 }
 
 .content {
-  /* padding: 20%; */
-  /* background-color: rgb(142, 255, 244); */
   height: 100%;
   width: 100%;
 }
@@ -182,12 +177,14 @@ html, body, #root, .App {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  max-height: 350px;
+  max-height: 300px;
   padding: 40px;
   height: 100vh;
   border-radius: 5%;
-  background-color: lightblue;
+  background-image: radial-gradient(circle, #2560fd, #1a1a2e);
   margin: 20px;
+  box-shadow: 0px 0px 10px 1px #1a1a2e;
+  border: #1a1a2e 1px solid;
 }
 
 .shadowImage {
@@ -197,3 +194,18 @@ html, body, #root, .App {
   min-height: 0;
   object-fit: contain;
 }
+
+/* .score {
+  height: 60px;
+  width: 200px;
+  background-color: lightblue;
+  margin-left: auto;
+  display: flex;
+  align-items: center;
+}
+
+.score1 {
+  padding: 20px;
+  background-color: lightcoral;
+} */
+
