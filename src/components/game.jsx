@@ -177,12 +177,12 @@ class Game extends Component {
     // Check if we're at zero.
     if (seconds == 0) {
       clearInterval(this.timer);
-      this.setState({ revealed: false });
       const img = this.getNewPokemonImage();
       this.hidePokemon();
       this.setState({
         img: img,
         time: this.secondsToTime(3),
+        revealed: false,
         seconds: 3,
       });
       this.timer = 0;

@@ -5,6 +5,7 @@
 html, body, #root, .App {
   height: 100%;
   background-image: radial-gradient(circle,#001c67, #000000);
+  background-color: black;
 }
 .container {
   text-align: center;
