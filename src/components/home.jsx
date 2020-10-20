@@ -17,7 +17,7 @@ class Home extends Component {
           <div className="circle-sm  green ml10"></div>
         </div>
         <div className="canvasContainer">
-        <Link to="/game"> <DefaultButton text="Start Guessing!" /> </Link>
+        <Link to="/whosthatpokemon/game"> <DefaultButton text="Start Guessing!" /> </Link>
           </div>
         {/* <Link to="/game"> <DefaultButton text="Start Guessing!" /> </Link> */}
       </div>

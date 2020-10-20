@@ -14,7 +14,7 @@ html, body, #root, .App {
 .pokedex {
   text-align: center;
   background-image: radial-gradient(circle, #FB232E, #a50005);
-  width: 30%;
+  max-width: 400px;
   height: 550px;
   margin: auto;
   margin-top: 20px;
