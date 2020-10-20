@@ -1,11 +1,11 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "0338fa24302106e56d62d97289b9e1b6",
+    "revision": "b6c1f8f0aeaae9df3b7681bbf7e0b89e",
     "url": "/whosthatpokemon/index.html"
   },
   {
-    "revision": "7a1e0393fee6d8efb5b7",
-    "url": "/whosthatpokemon/static/css/main.f481e2a7.chunk.css"
+    "revision": "f9f0812909bcdffe6242",
+    "url": "/whosthatpokemon/static/css/main.61cb5eac.chunk.css"
   },
   {
     "revision": "d131b662dcfb8ff12cb9",
@@ -16,7 +16,7 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/whosthatpokemon/static/js/2.3481ae90.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "7a1e0393fee6d8efb5b7",
+    "revision": "f9f0812909bcdffe6242",
     "url": "/whosthatpokemon/static/js/main.ef71b472.chunk.js"
   },
   {
