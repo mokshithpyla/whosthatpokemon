@@ -15,6 +15,11 @@ function App() {
         <Route path="/whosthatpokemon" exact component={Home} />
         <Route path="/whosthatpokemon/game" component={Game} />
       </Router>
+      <div className="footer">
+        All images © Nintendo. Artwork from Veekun.
+        <br />
+       <a href="https://github.com/mokshithpyla/whosthatpokemon" style={{textDecoration:"none"}}> GitHub </a>
+      </div>
     </div>
   );
 }

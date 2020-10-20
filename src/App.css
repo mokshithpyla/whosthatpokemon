@@ -1,6 +1,7 @@
 
 * {
   box-sizing: border-box;
+  color: white;
 }
 html, body, #root, .App {
   height: 100%;
@@ -43,6 +44,12 @@ html, body, #root, .App {
   }
 }
 
+@media only screen and (max-width: 320px) {
+  .scoreboard {
+    margin-left: 0% !important;
+  }
+}
+
 .white {
   color: white;
 }
@@ -73,6 +80,7 @@ html, body, #root, .App {
 .button {
   width: 50%;
   margin-left: 25%;
+  color: white;
 }
 
 .circle-sm {
@@ -196,17 +204,66 @@ html, body, #root, .App {
   object-fit: contain;
 }
 
-/* .score {
-  height: 60px;
-  width: 200px;
-  background-color: lightblue;
-  margin-left: auto;
+.scoreboard {
   display: flex;
+  height: 60px;
+  width: 50px;
   align-items: center;
+  margin-left: 20%;
 }
 
 .score1 {
   padding: 20px;
   background-color: lightcoral;
+}
+
+table {
+  border-collapse: collapse;
+  color: white;
+  table-layout: fixed;
+}
+
+table, td, th {
+  border: 1px solid #ff4444;
+}
+
+td {
+  max-width: 35px;
+}
+/* th, td {
+
 } */
 
+th {
+  height: 30px;
+}
+
+.check-green {
+  color: yellowgreen;
+}
+
+.view-blue {
+  color: #98e9ff;
+  font-weight: bold;
+}
+
+.ms-Label {
+  color: white;
+}
+
+.capitalize {
+  text-transform: capitalize;
+}
+
+.footer, .footer > a {
+  width: 100%;
+  bottom: 5px;
+  margin-top: 30px;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #98e9ff;
+}
+
+.footer > a:hover {
+  color:white;
+}
