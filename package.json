@@ -1,8 +1,8 @@
 {
-  "name": "whodatpokemon",
+  "name": "whosthatpokemon",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://mokshithpyla.github.io/whodatpokemon",
+  "homepage": "http://mokshithpyla.github.io/whosthatpokemon",
   "dependencies": {
     "@fluentui/react": "^7.145.0",
     "@testing-library/jest-dom": "^4.2.4",
