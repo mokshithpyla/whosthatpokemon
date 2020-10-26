@@ -1,17 +1,17 @@
 {
   "files": {
-    "main.css": "/whosthatpokemon/static/css/main.61cb5eac.chunk.css",
-    "main.js": "/whosthatpokemon/static/js/main.ef71b472.chunk.js",
-    "main.js.map": "/whosthatpokemon/static/js/main.ef71b472.chunk.js.map",
+    "main.css": "/whosthatpokemon/static/css/main.888e9874.chunk.css",
+    "main.js": "/whosthatpokemon/static/js/main.44a5f61f.chunk.js",
+    "main.js.map": "/whosthatpokemon/static/js/main.44a5f61f.chunk.js.map",
     "runtime-main.js": "/whosthatpokemon/static/js/runtime-main.9c1927e1.js",
     "runtime-main.js.map": "/whosthatpokemon/static/js/runtime-main.9c1927e1.js.map",
-    "static/js/2.3481ae90.chunk.js": "/whosthatpokemon/static/js/2.3481ae90.chunk.js",
-    "static/js/2.3481ae90.chunk.js.map": "/whosthatpokemon/static/js/2.3481ae90.chunk.js.map",
+    "static/js/2.e2470dfa.chunk.js": "/whosthatpokemon/static/js/2.e2470dfa.chunk.js",
+    "static/js/2.e2470dfa.chunk.js.map": "/whosthatpokemon/static/js/2.e2470dfa.chunk.js.map",
     "index.html": "/whosthatpokemon/index.html",
-    "precache-manifest.809cb49c0f4b52141f9d951915d8dd99.js": "/whosthatpokemon/precache-manifest.809cb49c0f4b52141f9d951915d8dd99.js",
+    "precache-manifest.c43676056567178577aca8ce7c2cef29.js": "/whosthatpokemon/precache-manifest.c43676056567178577aca8ce7c2cef29.js",
     "service-worker.js": "/whosthatpokemon/service-worker.js",
-    "static/css/main.61cb5eac.chunk.css.map": "/whosthatpokemon/static/css/main.61cb5eac.chunk.css.map",
-    "static/js/2.3481ae90.chunk.js.LICENSE.txt": "/whosthatpokemon/static/js/2.3481ae90.chunk.js.LICENSE.txt",
+    "static/css/main.888e9874.chunk.css.map": "/whosthatpokemon/static/css/main.888e9874.chunk.css.map",
+    "static/js/2.e2470dfa.chunk.js.LICENSE.txt": "/whosthatpokemon/static/js/2.e2470dfa.chunk.js.LICENSE.txt",
     "static/media/1.png": "/whosthatpokemon/static/media/1.4df5b90d.png",
     "static/media/10.png": "/whosthatpokemon/static/media/10.c207d2d1.png",
     "static/media/100.png": "/whosthatpokemon/static/media/100.1316ea7e.png",
@@ -162,13 +162,12 @@
     "static/media/96.png": "/whosthatpokemon/static/media/96.136945b0.png",
     "static/media/97.png": "/whosthatpokemon/static/media/97.95815423.png",
     "static/media/98.png": "/whosthatpokemon/static/media/98.eaa3bca0.png",
-    "static/media/99.png": "/whosthatpokemon/static/media/99.f4d212fb.png",
-    "static/media/whodat.png": "/whosthatpokemon/static/media/whodat.b5083839.png"
+    "static/media/99.png": "/whosthatpokemon/static/media/99.f4d212fb.png"
   },
   "entrypoints": [
     "static/js/runtime-main.9c1927e1.js",
-    "static/js/2.3481ae90.chunk.js",
-    "static/css/main.61cb5eac.chunk.css",
-    "static/js/main.ef71b472.chunk.js"
+    "static/js/2.e2470dfa.chunk.js",
+    "static/css/main.888e9874.chunk.css",
+    "static/js/main.44a5f61f.chunk.js"
   ]
 }
