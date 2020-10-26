@@ -29,6 +29,23 @@ class Game extends Component {
     score: 0,
     pokemonNumber: 0
   }
+
+  buttonStyle = {
+    root: {
+      border: 'none',
+      color: "white",
+      backgroundColor: "#001c67"
+    },
+    rootHovered: {
+      backgroundColor: '#05AAD9',
+      color: '#05AAD9'
+    },
+    rootPressed: {
+      backgroundColor: '#05AAD9',
+      color: '#05AAD9',
+      boxShadow: '0 0 10px 1px black'
+    }
+  }
   constructor(props) {
     super(props);
     this.timer = 0;
@@ -69,29 +86,33 @@ class Game extends Component {
           </div> */}
           <div className="scoreboard ml10">
             <div className="ml10">
-              <label> 🔥 </label>
+              <label className="f10"> Streak 🔥 </label>
               <table>
-                <tr>
-                  <th> ⚡</th>
-                  <th> ✨ </th>
-                </tr>
-                <tr>
-                  <td> {this.state.streak} </td>
-                  <td> {this.state.hstreak} </td>
-                </tr>
+                <tbody>
+                  <tr>
+                    <th> ⚡</th>
+                    <th> ✨ </th>
+                  </tr>
+                  <tr>
+                    <td> {this.state.streak} </td>
+                    <td> {this.state.hstreak} </td>
+                  </tr>
+                </tbody>
               </table>
             </div>
             <div className="ml10">
-              <label> 💯 </label>
+              <label className="f10">Score 💯 </label>
               <table>
-                <tr>
-                  <th> <CheckIcon />  </th>
-                  <th> <SeenIcon />  </th>
-                </tr>
-                <tr>
-                  <td> {this.state.score} </td>
-                  <td> {151 - this.state.currentPokemonNumbers.length} </td>
-                </tr>
+                <tbody>
+                  <tr>
+                    <th> <CheckIcon />  </th>
+                    <th> <SeenIcon />  </th>
+                  </tr>
+                  <tr>
+                    <td> {this.state.score} </td>
+                    <td> {151 - this.state.currentPokemonNumbers.length} </td>
+                  </tr>
+                </tbody>
               </table>
             </div>
           </div>
@@ -102,21 +123,21 @@ class Game extends Component {
               <img ref={this.myRef} src={this.state.img} style={{ filter: "contrast(0%) brightness(0%)" }} className="shadowImage" />
             </div>
             <div>
-            {!this.state.revealed && <DefaultButton text="Reveal" onClick={() => this.revealPokemon(true)} style={{ color: "white", backgroundColor: "#001c67" }}><SeenIcon /> </DefaultButton>}
-            {!this.state.revealed && <TextField label="Guess!" onChange={this.handleChange} value={this.state.guess} className="button" style={{ textTransform: "capitalize" }} />}
-            {this.state.revealed &&
-              <div className="capitalize">
-                {this.guessed &&
-                  <h2> Yes! <br></br>It's {pokemonNames[this.pokemonNumber]} <CheckIcon />
-                  </h2>}
-                {!this.guessed &&
-                  <h2> It's {pokemonNames[this.pokemonNumber]} <SeenIcon />
-                  </h2>}
-                <h2>
-                  Next Pokemon in {this.state.time.s}
-                </h2>
-              </div>
-            }
+              {!this.state.revealed && <DefaultButton text="Reveal" onClick={() => this.revealPokemon(true)} styles={this.buttonStyle}><SeenIcon /> </DefaultButton>}
+              {!this.state.revealed && <TextField label="Guess!" onChange={this.handleChange} value={this.state.guess} className="button" style={{ textTransform: "capitalize" }} />}
+              {this.state.revealed &&
+                <div className="capitalize">
+                  {this.guessed &&
+                    <h2> Yes! <br></br>It's {pokemonNames[this.pokemonNumber]} <CheckIcon />
+                    </h2>}
+                  {!this.guessed &&
+                    <h2> It's {pokemonNames[this.pokemonNumber]} <SeenIcon />
+                    </h2>}
+                  <h2>
+                    Next Pokemon in {this.state.time.s}
+                  </h2>
+                </div>
+              }
             </div>
           </div>
         }

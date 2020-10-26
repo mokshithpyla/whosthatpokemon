@@ -7,7 +7,8 @@ import { BrowserRouter as Router, Route } from 'react-router-dom';
 function App() {
   return (
     <div className="container">
-      <h1 className="white"> Who's That Pokemon? </h1>
+      {/* <h1 className="white"> Who's That Pokemon? </h1> */}
+      <img src="https://fontmeme.com/permalink/201026/34dc01a9b6cca54ffa149506edf63ddf.png" alt="Who's that Pokemon?" className="title"/>
       {/* <div className="pokeball">
         <div className="pokeball__button"></div>
       </div> */}

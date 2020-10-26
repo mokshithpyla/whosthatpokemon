@@ -5,6 +5,23 @@ import '../App.css';
 
 class Home extends Component {
 
+  buttonStyle = {
+    root: {
+      border: 'none',
+      color: "white",
+      backgroundColor: "#001c67"
+    },
+    rootHovered: {
+      backgroundColor: '#05AAD9',
+      color: '#05AAD9'
+    },
+    rootPressed: {
+      backgroundColor: '#05AAD9',
+      color: '#05AAD9',
+      boxShadow: '0 0 10px 1px black'
+    }
+  }
+
   render() {
     return (
       <div className="pokedex">
@@ -17,9 +34,8 @@ class Home extends Component {
           <div className="circle-sm  green ml10"></div>
         </div>
         <div className="canvasContainer">
-        <Link to="/whosthatpokemon/game"> <DefaultButton text="Start Guessing!" style={{color: "white", backgroundColor: "#001c67"}}/> </Link>
+        <Link to="/whosthatpokemon/game"> <DefaultButton text="Start Guessing!" styles={this.buttonStyle}/> </Link>
           </div>
-        {/* <Link to="/game"> <DefaultButton text="Start Guessing!" /> </Link> */}
       </div>
     );
   }
