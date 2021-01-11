@@ -61,6 +61,7 @@ class Game extends Component {
   componentDidMount() {
     let timeLeftVar = this.secondsToTime(this.state.seconds);
     this.setState({ time: timeLeftVar });
+    this.setTitleAndDescription();
   }
 
   render() {
@@ -159,6 +160,8 @@ class Game extends Component {
     this.setState({ endOfGame: false, currentPokemonNumbers: Array.from({ length: 2 }, (_, i) => i + 1) });
     this.startTimer();
   }
+
+
 
   handleChange = (event) => {
     this.setState({ guess: event.target.value });
