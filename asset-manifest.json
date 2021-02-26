@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/whosthatpokemon/static/css/main.888e9874.chunk.css",
-    "main.js": "/whosthatpokemon/static/js/main.c1c7722b.chunk.js",
-    "main.js.map": "/whosthatpokemon/static/js/main.c1c7722b.chunk.js.map",
+    "main.js": "/whosthatpokemon/static/js/main.44a5f61f.chunk.js",
+    "main.js.map": "/whosthatpokemon/static/js/main.44a5f61f.chunk.js.map",
     "runtime-main.js": "/whosthatpokemon/static/js/runtime-main.9c1927e1.js",
     "runtime-main.js.map": "/whosthatpokemon/static/js/runtime-main.9c1927e1.js.map",
     "static/js/2.e2470dfa.chunk.js": "/whosthatpokemon/static/js/2.e2470dfa.chunk.js",
     "static/js/2.e2470dfa.chunk.js.map": "/whosthatpokemon/static/js/2.e2470dfa.chunk.js.map",
     "index.html": "/whosthatpokemon/index.html",
-    "precache-manifest.c6cb71023f03e140473b1c0f6128e8cc.js": "/whosthatpokemon/precache-manifest.c6cb71023f03e140473b1c0f6128e8cc.js",
+    "precache-manifest.c43676056567178577aca8ce7c2cef29.js": "/whosthatpokemon/precache-manifest.c43676056567178577aca8ce7c2cef29.js",
     "service-worker.js": "/whosthatpokemon/service-worker.js",
     "static/css/main.888e9874.chunk.css.map": "/whosthatpokemon/static/css/main.888e9874.chunk.css.map",
     "static/js/2.e2470dfa.chunk.js.LICENSE.txt": "/whosthatpokemon/static/js/2.e2470dfa.chunk.js.LICENSE.txt",
@@ -168,6 +168,6 @@
     "static/js/runtime-main.9c1927e1.js",
     "static/js/2.e2470dfa.chunk.js",
     "static/css/main.888e9874.chunk.css",
-    "static/js/main.c1c7722b.chunk.js"
+    "static/js/main.44a5f61f.chunk.js"
   ]
 }
