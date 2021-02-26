@@ -61,7 +61,6 @@ class Game extends Component {
   componentDidMount() {
     let timeLeftVar = this.secondsToTime(this.state.seconds);
     this.setState({ time: timeLeftVar });
-    this.setTitleAndDescription();
   }
 
   render() {

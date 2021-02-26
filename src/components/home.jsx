@@ -39,18 +39,6 @@ class Home extends Component {
       </div>
     );
   }
-
-  componentDidMount() {
-    this.setTitleAndDescription();
-  }
-
-  setTitleAndDescription = () => {
-    document.title = `Who's thaat Pokémon?`
-    let meta = document.createElement("meta");
-    meta.name = "description";
-    meta.content = "Gotta Catch 'em all pokemonnn "
-    document.getElementsByTagName("head")[0].appendChild(meta);
-  };
 }
 
 export default Home;
